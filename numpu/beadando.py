@@ -5,12 +5,12 @@ from functools import reduce
 import matplotlib.pyplot as plt
 
 # fájl beolvasás és tisztítás
-df_dba_original = pd.read_csv('../Projekt_Numpu/pythonProject/Numpu_KGHD/DBA.csv', index_col=0)
-df_tlt_original = pd.read_csv('../Projekt_Numpu/pythonProject/Numpu_KGHD/TLT.csv', index_col=0)
-df_vde_original = pd.read_csv('../Projekt_Numpu/pythonProject/Numpu_KGHD/VDE.csv', index_col=0)
-df_xlv_original = pd.read_csv('../Projekt_Numpu/pythonProject/Numpu_KGHD/XLV.csv', index_col=0)
-df_xme_original = pd.read_csv('../Projekt_Numpu/pythonProject/Numpu_KGHD/XME.csv', index_col=0)
-df_risk_free_rate = pd.read_csv('../Projekt_Numpu/pythonProject/Numpu_KGHD/DTB3.csv')
+df_dba_original = pd.read_csv('../Beadando/DBA.csv', index_col=0)
+df_tlt_original = pd.read_csv('../Beadando/TLT.csv', index_col=0)
+df_vde_original = pd.read_csv('../Beadando/VDE.csv', index_col=0)
+df_xlv_original = pd.read_csv('../Beadando/XLV.csv', index_col=0)
+df_xme_original = pd.read_csv('../Beadando/XME.csv', index_col=0)
+df_risk_free_rate = pd.read_csv('../Projekt_Numpu/DTB3.csv')
 df_risk_free_rate.index = pd.to_datetime(df_risk_free_rate['DATE'])
 df_risk_free_rate = df_risk_free_rate[['DTB3']]
 df_risk_free_rate.columns = ['risk_free']
